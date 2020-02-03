@@ -15,6 +15,7 @@ class Session(BaseSession):
     """Session object"""
     new = attrib(type=bool)
     skill_id = attrib(type=str)
+    access_tokens = attrib(type=dict)
 
     @property
     def base(self):
